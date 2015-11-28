@@ -1,5 +1,5 @@
 html {
-  font-size: 20px; }
+  font-size: 20; }
 
 .Index {
   font-family: helvetica, sans-serif; }
@@ -35,41 +35,65 @@ html {
   .Index-subheader {
     line-height: 1;
     text-align: center; }
-  @media only screen and (max-width: 555px) {
+  @media only screen and (max-width: 415px) {
     .Index {
-      /*    &-header {
-            display: inline;
-            font-size: 0.75rem;
-            letter-spacing: 0.15rem;
-          }
-      
-          &-subheader {
-            font-size: 0.75rem;
-            letter-spacing: 0.15rem;
-          }
-      
-          &-info {
-            p {
-              font-size: 0.85rem;
-            }
-          }*/ }
+    /*&-header {
+      display: inline;
+      font-size: $handheld;
+      letter-spacing: $handheldSpacing;
+    }
+
+    &-subheader {
+      font-size: $handheld;
+      letter-spacing: $handheldSpacing;
+    }
+
+    &-info {
+      p {
+        font-size: 0.85rem;
+      }
+    }*/ }
       .Index-siteImage {
+        display: none;
+        height: 45px; }
+      .Index-header {
         display: inline;
-        height: 45px; } }
-  @media only screen and (min-width: 556px) and (max-width: 689px) {
+        font-size: 1.125rem;
+        letter-spacing: 0.2625rem; }
+      .Index-subheader {
+        font-size: 1.125rem;
+        letter-spacing: 0.2625rem; } }
+  @media only screen and (min-width: 416px) and (max-width: 555px) {
+    .Index-siteImage {
+      display: inline;
+      height: 45px; }
+    .Index-header {
+      display: inline;
+      font-size: 1.125rem;
+      letter-spacing: 0.2625rem; }
+    .Index-subheader {
+      font-size: 1.125rem;
+      letter-spacing: 0.2625rem; }
+    .Index-info p {
+      font-size: 0.85rem; } }
+  @media only screen and (min-width: 556px) and (max-width: 809px) {
     .Index-siteImage {
       position: relative;
       top: -1px;
       height: 3.75rem; }
     .Index-header {
       display: inline-block;
+      /*font-size: 1.25rem;*/
       font-size: 1.5rem;
-      letter-spacing: 0.30rem; }
+      /*letter-spacing: $mediumSpacing;*/
+      letter-spacing: 0.35rem; }
       .Index-header h1 {
         margin: 0.5625rem 0; }
     .Index-subheader {
+      /*font-size: 1.25rem;*/
       font-size: 1.5rem;
-      letter-spacing: 0.30rem; }
+      /*letter-spacing: 0.30rem;*/
+      letter-spacing: 0.35rem; }
     .Index-info {
       font-size: 0.85rem; }
     .Index-voiceDemo {
@@ -78,7 +102,7 @@ html {
     margin: 0px 15px; }
     .Index-info p {
       width: 100%; }
-  @media only screen and (min-width: 690px) {
+  @media only screen and (min-width: 810px) {
     .Index-siteImage {
       top: -1.5px;
       height: 4.75rem; }

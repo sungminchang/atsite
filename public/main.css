@@ -17,23 +17,26 @@ html {
       text-transform: uppercase;
       letter-spacing: 0.4rem; }
       .Index-headerBox .TitleBox h1 {
-        margin: 0.75rem; }
+        margin: 0.75rem 0; }
       .Index-headerBox .TitleBox h2 {
         margin: 0; }
   .Index-siteImage {
     display: inline;
+    width: auto;
+    vertical-align: bottom;
     margin-right: 25px; }
   .Index iframe {
     max-width: 100%;
     max-height: 100%; }
   .Index-header {
-    text-align: center; }
+    text-align: center;
+    line-height: 1; }
   .Index-subheader {
+    line-height: 1;
     text-align: center; }
   @media only screen and (max-width: 440px) {
     .Index-siteImage {
       display: inline;
-      width: auto;
       height: 45px; }
     .Index-header {
       display: inline;
@@ -46,7 +49,8 @@ html {
       font-size: 0.85rem; } }
   @media only screen and (min-width: 441px) and (max-width: 689px) {
     .Index-siteImage {
-      width: auto;
+      position: relative;
+      top: -1px;
       height: 3.75rem; }
     .Index-header {
       display: inline-block;
@@ -67,23 +71,17 @@ html {
     .Index-header {
       display: inline-block;
       font-size: 2rem;
-      line-height: 1;
       letter-spacing: 0.35rem; }
     .Index-subheader {
       font-size: 2rem;
-      line-height: 1;
       letter-spacing: 0.35rem; }
     .Index-info {
       font-size: 1.1rem; }
     .Index-voiceDemo {
-      /*width: 95%;*/
       padding: 0 15px; }
     .Index-siteImage {
       display: inline-block;
-      max-width: 230px;
-      max-height: 95px;
-      width: auto;
-      height: auto; } }
+      height: 4.75rem; } }
   .Index-info {
     margin: 0px 15px; }
     .Index-info p {

@@ -16,6 +16,8 @@ html {
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 0.4rem; }
+      .Index-headerBox .TitleBox h1 {
+        margin: 0.75rem; }
       .Index-headerBox .TitleBox h2 {
         margin: 0; }
   .Index-siteImage {
@@ -45,7 +47,7 @@ html {
   @media only screen and (min-width: 441px) and (max-width: 689px) {
     .Index-siteImage {
       width: auto;
-      height: 3.57em; }
+      height: 3.75rem; }
     .Index-header {
       display: inline-block;
       font-size: 1.5rem;

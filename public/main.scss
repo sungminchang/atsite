@@ -32,6 +32,7 @@ html {
   }
 
   &-siteImage {
+    position: relative;
     display: inline;
     width: auto;
     vertical-align: bottom;
@@ -54,31 +55,31 @@ html {
   }
 
 
-  @media only screen and (max-width : 440px) {
+  @media only screen and (max-width : 555px) {
     &-siteImage {
       display: inline;
       height: 45px;
     }
 
-    &-header {
+/*    &-header {
       display: inline;
       font-size: 0.75rem;
-      letter-spacing: 0.3rem;
+      letter-spacing: 0.15rem;
     }
 
     &-subheader {
       font-size: 0.75rem;
-      letter-spacing: 0.35rem;
+      letter-spacing: 0.15rem;
     }
 
     &-info {
       p {
         font-size: 0.85rem;
       }
-    }
+    }*/
   }
 
-  @media only screen and (min-width : 441px) and (max-width: 689px) {
+  @media only screen and (min-width : 556px) and (max-width: 689px) {
     &-siteImage {
       position: relative;
       top: -1px;
@@ -88,12 +89,15 @@ html {
     &-header {
       display: inline-block;
       font-size: 1.5rem;
-      letter-spacing: 0.35rem;
+      letter-spacing: 0.30rem;
+      h1 {
+        margin: 0.5625rem 0;
+      }
     }
 
     &-subheader {
       font-size: 1.5rem;
-      letter-spacing: 0.35rem;
+      letter-spacing: 0.30rem;
     }
 
     &-info {
@@ -113,6 +117,11 @@ html {
   }
 
   @media only screen and (min-width : 690px) {
+    &-siteImage {
+      top: -1.5px;
+      height: 4.75rem;
+    }
+
     &-header {
       display: inline-block;
       font-size: 2rem;
@@ -130,11 +139,6 @@ html {
 
     &-voiceDemo {
       padding: 0 15px;
-    }
-
-    &-siteImage {
-      display: inline-block;
-      height: 4.75rem;
     }
   }
 

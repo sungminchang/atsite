@@ -21,6 +21,7 @@ html {
       .Index-headerBox .TitleBox h2 {
         margin: 0; }
   .Index-siteImage {
+    position: relative;
     display: inline;
     width: auto;
     vertical-align: bottom;
@@ -34,20 +35,28 @@ html {
   .Index-subheader {
     line-height: 1;
     text-align: center; }
-  @media only screen and (max-width: 440px) {
-    .Index-siteImage {
-      display: inline;
-      height: 45px; }
-    .Index-header {
-      display: inline;
-      font-size: 0.75rem;
-      letter-spacing: 0.3rem; }
-    .Index-subheader {
-      font-size: 0.75rem;
-      letter-spacing: 0.35rem; }
-    .Index-info p {
-      font-size: 0.85rem; } }
-  @media only screen and (min-width: 441px) and (max-width: 689px) {
+  @media only screen and (max-width: 555px) {
+    .Index {
+      /*    &-header {
+            display: inline;
+            font-size: 0.75rem;
+            letter-spacing: 0.15rem;
+          }
+      
+          &-subheader {
+            font-size: 0.75rem;
+            letter-spacing: 0.15rem;
+          }
+      
+          &-info {
+            p {
+              font-size: 0.85rem;
+            }
+          }*/ }
+      .Index-siteImage {
+        display: inline;
+        height: 45px; } }
+  @media only screen and (min-width: 556px) and (max-width: 689px) {
     .Index-siteImage {
       position: relative;
       top: -1px;
@@ -55,10 +64,12 @@ html {
     .Index-header {
       display: inline-block;
       font-size: 1.5rem;
-      letter-spacing: 0.35rem; }
+      letter-spacing: 0.30rem; }
+      .Index-header h1 {
+        margin: 0.5625rem 0; }
     .Index-subheader {
       font-size: 1.5rem;
-      letter-spacing: 0.35rem; }
+      letter-spacing: 0.30rem; }
     .Index-info {
       font-size: 0.85rem; }
     .Index-voiceDemo {
@@ -68,6 +79,9 @@ html {
     .Index-info p {
       width: 100%; }
   @media only screen and (min-width: 690px) {
+    .Index-siteImage {
+      top: -1.5px;
+      height: 4.75rem; }
     .Index-header {
       display: inline-block;
       font-size: 2rem;
@@ -78,10 +92,7 @@ html {
     .Index-info {
       font-size: 1.1rem; }
     .Index-voiceDemo {
-      padding: 0 15px; }
-    .Index-siteImage {
-      display: inline-block;
-      height: 4.75rem; } }
+      padding: 0 15px; } }
   .Index-info {
     margin: 0px 15px; }
     .Index-info p {

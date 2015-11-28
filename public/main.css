@@ -11,42 +11,53 @@ html {
     /*display: flex;*/
     /*justify-content: space-around;*/
     /*margin: 0 auto;*/
-    /*text-align: center;*/ }
+    font-weight: bolder;
+    text-align: center;
+    width: 100%; }
     .Index-headerBox .TitleBox {
       display: inline-block;
       text-align: center;
       font-family: proxima-nova, sans-serif;
       text-transform: uppercase;
-      letter-spacing: 0.4rem;
-      width: 70%; }
+      letter-spacing: 0.4rem; }
       .Index-headerBox .TitleBox h1 {
         margin: 0; }
+      .Index-headerBox .TitleBox-header {
+        text-align: center;
+        line-height: 1; }
+      .Index-headerBox .TitleBox-subheader {
+        text-align: center;
+        line-height: 1; }
   .Index-siteImage {
-    display: inline; }
+    display: inline;
+    margin-right: 25px; }
   .Index iframe {
     max-width: 100%;
     max-height: 100%; }
-  .Index-header {
-    text-align: center; }
-  .Index-subheader {
-    text-align: center; }
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 440px) {
     .Index-siteImage {
       display: inline;
       width: auto;
       height: 45px; }
     .Index-header {
       display: inline;
-      font-size: 1rem;
+      font-size: 0.75rem;
       letter-spacing: 0.3rem; }
+    .Index-subheader {
+      font-size: 0.75rem;
+      letter-spacing: 0.35rem; }
     .Index-info p {
       font-size: 0.85rem; } }
-  @media only screen and (min-width: 321px) and (max-width: 767px) {
+  @media only screen and (min-width: 441px) and (max-width: 560px) {
     .Index-siteImage {
       width: auto;
       height: 62.5px; }
     .Index-header {
-      font-size: 1.75rem;
+      display: inline-block;
+      font-size: 1rem;
+      letter-spacing: 0.35rem; }
+    .Index-subheader {
+      font-size: 1rem;
       letter-spacing: 0.35rem; }
     .Index-info {
       font-size: 0.85rem; }
@@ -56,13 +67,14 @@ html {
     margin: 0px 15px; }
     .Index-info p {
       width: 100%; }
-  @media only screen and (min-width: 768px) {
+  @media only screen and (min-width: 561px) {
     .Index-header {
       display: inline-block;
-      font-size: 1.4rem;
+      font-size: 2rem;
       letter-spacing: 0.35rem; }
     .Index-subheader {
-      font-size: 1.4rem;
+      font-size: 2rem;
+      line-height: 1;
       letter-spacing: 0.35rem; }
     .Index-info {
       font-size: 1.1rem; }

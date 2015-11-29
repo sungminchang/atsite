@@ -13,6 +13,10 @@ module.exports = {
       {
         test: /\.png$/,
         loader: 'url-loader?limit=8192'
+      },
+      { 
+        test: /\.(otf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/, 
+        loader: 'file-loader'
       }
     ]
   }

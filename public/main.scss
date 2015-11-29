@@ -1,8 +1,9 @@
 $fontSize: 18;
 $spacingMultiplier: 0.175;
-$breakpointMultiplier: 0.75;
+$breakpointMultiplier: 0.80;
 $imageBreakpointMultiplier: 0.85;
-$fontBreakpointMultiplier: 0.85;
+$fontBreakpointMultiplier: 0.90;
+$iframeBreakpointMultiplier: 0.75;
 
 $large: 2rem;
 $largeSpacing: $large * $spacingMultiplier;
@@ -18,11 +19,15 @@ $fontMedium: $fontLarge * $fontBreakpointMultiplier;
 $fontSmall: $fontMedium * $fontBreakpointMultiplier;
 $fontHandheld: $fontSmall * $fontBreakpointMultiplier;
 
-
 $imageLarge: 84px;
 $imageMedium: $imageLarge * $imageBreakpointMultiplier;
 $imageSmall: $imageMedium * $imageBreakpointMultiplier;
 $imageHandheld: $imageSmall * $imageBreakpointMultiplier;
+
+$iframeLarge: 9*$fontSize;
+$iframeMedium: $iframeLarge * $iframeBreakpointMultiplier;
+$iframeSmall: $iframeMedium * $iframeBreakpointMultiplier;
+$iframeHandheld: $iframeSmall * $iframeBreakpointMultiplier;
 
 $transitionSpeed: 0.1s;
 
@@ -224,7 +229,7 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
   }
 
   footer {
-    margin-top: 45px;
+    margin: 22.5px 0;
     text-align: center;
     .socialMediaIcons {
       &-icon {
@@ -251,11 +256,6 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
       letter-spacing: $smallSpacing;
     }
 
-    iframe {
-      height: 4.8rem;
-    }
-
-
     &-header {
       display: inline;
       font-size: $handheld;
@@ -265,6 +265,10 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     &-subheader {
       font-size: $handheld;
       letter-spacing: $handheldSpacing;
+    }
+
+    iframe {
+      height: $iframeHandheld;
     }
 
     &-info {
@@ -298,6 +302,10 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     &-subheader {
       font-size: $small;
       letter-spacing: $smallSpacing;
+    }
+
+    iframe {
+      height: $iframeSmall;
     }
 
     &-info {
@@ -341,14 +349,22 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
       letter-spacing: $mediumSpacing;
     }
 
+    iframe {
+      height: $iframeMedium;
+    }
+
+    iframes {
+      height: 6.4rem;
+    }
+
     &-info {
       font-size: $fontLarge;
     }
 
-    &-voiceDemo {
+/*    &-voiceDemo {
       width: 100%;
     }
-
+*/
     footer {
       .socialMediaIcons {
         &-icon {
@@ -376,12 +392,12 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
       letter-spacing: $largeSpacing;
     }
 
-    &-info {
-      font-size: $fontLarge;
+    iframe {
+      height: $iframeLarge;
     }
 
-    &-voiceDemo {
-      padding: 0 15px;
+    &-info {
+      font-size: $fontLarge;
     }
 
     footer {

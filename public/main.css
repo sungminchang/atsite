@@ -1,10 +1,13 @@
 html {
-  font-size: 20; }
+  font-size: 20;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
 
 .Index {
   font-family: helvetica, sans-serif; }
-  .Index a {
-    cursor: pointer; }
   .Index p {
     font-weight: lighter; }
   .Index-headerBox {
@@ -26,15 +29,18 @@ html {
     width: auto;
     vertical-align: bottom;
     margin-right: 25px; }
-  .Index iframe {
-    max-width: 100%;
-    max-height: 100%; }
   .Index-header {
     text-align: center;
     line-height: 1; }
   .Index-subheader {
     line-height: 1;
     text-align: center; }
+  .Index footer {
+    margin-top: 45px;
+    text-align: center; }
+    .Index footer .socialMediaIcons-icon {
+      margin: 5px;
+      border-radius: 5px; }
   @media only screen and (max-width: 415px) {
     .Index {
     /*&-header {
@@ -62,7 +68,10 @@ html {
         letter-spacing: 0.2625rem; }
       .Index-subheader {
         font-size: 1.125rem;
-        letter-spacing: 0.2625rem; } }
+        letter-spacing: 0.2625rem; }
+      .Index footer .socialMediaIcons-icon {
+        width: 35.4375px;
+        height: auto; } }
   @media only screen and (min-width: 416px) and (max-width: 555px) {
     .Index-siteImage {
       display: inline;
@@ -75,7 +84,10 @@ html {
       font-size: 1.125rem;
       letter-spacing: 0.2625rem; }
     .Index-info p {
-      font-size: 0.85rem; } }
+      font-size: 0.85rem; }
+    .Index footer .socialMediaIcons-icon {
+      width: 47.25px;
+      height: auto; } }
   @media only screen and (min-width: 556px) and (max-width: 809px) {
     .Index-siteImage {
       position: relative;
@@ -97,7 +109,10 @@ html {
     .Index-info {
       font-size: 0.85rem; }
     .Index-voiceDemo {
-      width: 100%; } }
+      width: 100%; }
+    .Index footer .socialMediaIcons-icon {
+      width: 63px;
+      height: auto; } }
   .Index-info {
     margin: 0px 15px; }
     .Index-info p {
@@ -116,7 +131,10 @@ html {
     .Index-info {
       font-size: 1.1rem; }
     .Index-voiceDemo {
-      padding: 0 15px; } }
+      padding: 0 15px; }
+    .Index footer .socialMediaIcons-icon {
+      width: 84px;
+      height: auto; } }
   .Index-info {
     margin: 0px 15px; }
     .Index-info p {

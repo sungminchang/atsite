@@ -11,15 +11,26 @@ $smallSpacing: $medium * $spacingMultiplier;
 $handheld: $small * $breakpointMultiplier;
 $handheldSpacing: $small * $spacingMultiplier;
 
+$imageLarge: 84px;
+$imageMedium: $imageLarge * $breakpointMultiplier;
+$imageSmall: $imageMedium * $breakpointMultiplier;
+$imageHandheld: $imageSmall * $breakpointMultiplier;
+
 html {
   font-size: $fontSize;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
 }
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
 
 .Index {
   font-family: helvetica, sans-serif;
-  a {
-    cursor: pointer;
-  }
+
 
   p {
     font-weight: lighter;
@@ -52,11 +63,6 @@ html {
     margin-right: 25px;
   }
 
-  iframe {
-    max-width: 100%;
-    max-height: 100%;
-  }
-
   &-header {
     text-align: center;
     line-height: 1;
@@ -65,6 +71,17 @@ html {
   &-subheader {
     line-height: 1;
     text-align: center;
+  }
+
+  footer {
+    margin-top: 45px;
+    text-align: center;
+    .socialMediaIcons {
+      &-icon {
+        margin: 5px;
+        border-radius: 5px;
+      }
+    }
   }
 
 
@@ -101,6 +118,15 @@ html {
         font-size: 0.85rem;
       }
     }*/
+
+    footer {
+      .socialMediaIcons {
+        &-icon {
+          width: $imageHandheld;
+          height: auto;
+        }
+      }
+    }
   }
 
   @media only screen and (min-width: 416px) and (max-width : 555px) {
@@ -123,6 +149,15 @@ html {
     &-info {
       p {
         font-size: 0.85rem;
+      }
+    }
+
+    footer {
+      .socialMediaIcons {
+        &-icon {
+          width: $imageSmall;
+          height: auto;
+        }
       }
     }
   }
@@ -159,6 +194,15 @@ html {
     &-voiceDemo {
       width: 100%;
     }
+
+    footer {
+      .socialMediaIcons {
+        &-icon {
+          width: $imageMedium;
+          height: auto;
+        }
+      }
+    }
   }
 
   &-info {
@@ -192,6 +236,16 @@ html {
     &-voiceDemo {
       padding: 0 15px;
     }
+
+    footer {
+      .socialMediaIcons {
+        &-icon {
+          width: $imageLarge;
+          height: auto;
+        }
+      }
+    }
+
   }
 
   &-info {

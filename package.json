@@ -4,7 +4,14 @@
   "description": "professional portfolio website for client",
   "main": "server.js",
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "css-loader": "^0.23.0",
+    "file-loader": "^0.8.5",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.9",
+    "webpack-dev-server": "^1.14.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js"

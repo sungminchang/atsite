@@ -155,38 +155,30 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     .Index footer .socialMediaIcons-icon {
       border-radius: 5px; }
   @media only screen and (max-width: 415px) {
-    .Index {
-    /*&-header {
+    .Index-siteImage {
+      display: none;
+      height: 2.25rem; }
+    .Index-header {
       display: inline;
-      font-size: $handheld;
-      letter-spacing: $handheldSpacing;
-    }
-
-    &-subheader {
-      font-size: $handheld;
-      letter-spacing: $handheldSpacing;
-    }
-
-    &-info {
-      p {
-        font-size: 0.85rem;
-      }
-    }*/ }
-      .Index-siteImage {
-        display: none;
-        height: 2.25rem; }
-      .Index-header {
-        display: inline;
-        font-size: 1.125rem;
-        letter-spacing: 0.2625rem; }
-      .Index-subheader {
-        font-size: 1.125rem;
-        letter-spacing: 0.2625rem; }
-      .Index iframe {
-        height: 4.8rem; }
-      .Index footer .socialMediaIcons-icon {
-        width: 51.5865px;
-        height: auto; } }
+      font-size: 1.125rem;
+      letter-spacing: 0.2625rem; }
+    .Index-subheader {
+      font-size: 1.125rem;
+      letter-spacing: 0.2625rem; }
+    .Index iframe {
+      height: 4.8rem; }
+    .Index-header {
+      display: inline;
+      font-size: 0.84375rem;
+      letter-spacing: 0.19688rem; }
+    .Index-subheader {
+      font-size: 0.84375rem;
+      letter-spacing: 0.19688rem; }
+    .Index-info p {
+      font-size: 0.79475rem; }
+    .Index footer .socialMediaIcons-icon {
+      width: 51.5865px;
+      height: auto; } }
   @media only screen and (min-width: 416px) and (max-width: 555px) {
     .Index-siteImage {
       display: inline;
@@ -199,7 +191,7 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
       font-size: 1.125rem;
       letter-spacing: 0.2625rem; }
     .Index-info p {
-      font-size: 0.85rem; }
+      font-size: 0.935rem; }
     .Index footer .socialMediaIcons-icon {
       width: 60.69px;
       height: auto; } }
@@ -222,7 +214,7 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
       /*letter-spacing: 0.30rem;*/
       letter-spacing: 0.35rem; }
     .Index-info {
-      font-size: 1.25rem; }
+      font-size: 1.1rem; }
     .Index-voiceDemo {
       width: 100%; }
     .Index footer .socialMediaIcons-icon {

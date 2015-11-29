@@ -2,6 +2,7 @@ $fontSize: 18;
 $spacingMultiplier: 0.175;
 $breakpointMultiplier: 0.75;
 $imageBreakpointMultiplier: 0.85;
+$fontBreakpointMultiplier: 0.85;
 
 $large: 2rem;
 $largeSpacing: $large * $spacingMultiplier;
@@ -11,6 +12,12 @@ $small: $medium * $breakpointMultiplier;
 $smallSpacing: $medium * $spacingMultiplier;
 $handheld: $small * $breakpointMultiplier;
 $handheldSpacing: $small * $spacingMultiplier;
+
+$fontLarge: 1.1rem;
+$fontMedium: $fontLarge * $fontBreakpointMultiplier;
+$fontSmall: $fontMedium * $fontBreakpointMultiplier;
+$fontHandheld: $fontSmall * $fontBreakpointMultiplier;
+
 
 $imageLarge: 84px;
 $imageMedium: $imageLarge * $imageBreakpointMultiplier;
@@ -249,7 +256,7 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     }
 
 
-    /*&-header {
+    &-header {
       display: inline;
       font-size: $handheld;
       letter-spacing: $handheldSpacing;
@@ -262,9 +269,9 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
 
     &-info {
       p {
-        font-size: 0.85rem;
+        font-size: $fontSmall;
       }
-    }*/
+    }
 
     footer {
       .socialMediaIcons {
@@ -295,7 +302,7 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
 
     &-info {
       p {
-        font-size: 0.85rem;
+        font-size: $fontMedium;
       }
     }
 
@@ -335,7 +342,7 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     }
 
     &-info {
-      font-size: 1.25rem;
+      font-size: $fontLarge;
     }
 
     &-voiceDemo {
@@ -370,7 +377,7 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     }
 
     &-info {
-      font-size: 1.1rem;
+      font-size: $fontLarge;
     }
 
     &-voiceDemo {

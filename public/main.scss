@@ -24,14 +24,22 @@ html {
 a {
   text-decoration: none;
   cursor: pointer;
+  color: #ff0066;
 }
 
-
+span {
+  color: #ff0066;
+}
 
 .Index {
   font-family: helvetica, sans-serif;
 
-
+  &-info {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    border-top: 0.1rem solid #ff0066;
+    border-bottom: 0.1rem solid #ff0066;
+  }
   p {
     font-weight: lighter;
   }
@@ -88,7 +96,7 @@ a {
   @media only screen and (max-width : 415px) {
     &-siteImage {
       display: none;
-      height: 45px;
+      height: 2.25rem;
     }
 
     &-header {
@@ -101,6 +109,11 @@ a {
       font-size: $small;
       letter-spacing: $smallSpacing;
     }
+
+    iframe {
+      height: 4.8rem;
+    }
+
 
     /*&-header {
       display: inline;
@@ -188,7 +201,7 @@ a {
     }
 
     &-info {
-      font-size: 0.85rem;
+      font-size: 1.25rem;
     }
 
     &-voiceDemo {
@@ -202,13 +215,6 @@ a {
           height: auto;
         }
       }
-    }
-  }
-
-  &-info {
-    margin: 0px 15px;
-    p {
-      width: 100%;
     }
   }
 
@@ -244,14 +250,6 @@ a {
           height: auto;
         }
       }
-    }
-
-  }
-
-  &-info {
-    margin: 0px 15px;
-    p {
-      width: 100%;
     }
   }
 

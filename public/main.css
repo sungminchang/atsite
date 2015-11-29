@@ -4,10 +4,19 @@ html {
 
 a {
   text-decoration: none;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #ff0066; }
+
+span {
+  color: #ff0066; }
 
 .Index {
   font-family: helvetica, sans-serif; }
+  .Index-info {
+    padding: 0.5rem 0;
+    margin-bottom: 1rem;
+    border-top: 0.1rem solid #ff0066;
+    border-bottom: 0.1rem solid #ff0066; }
   .Index p {
     font-weight: lighter; }
   .Index-headerBox {
@@ -61,7 +70,7 @@ a {
     }*/ }
       .Index-siteImage {
         display: none;
-        height: 45px; }
+        height: 2.25rem; }
       .Index-header {
         display: inline;
         font-size: 1.125rem;
@@ -69,6 +78,8 @@ a {
       .Index-subheader {
         font-size: 1.125rem;
         letter-spacing: 0.2625rem; }
+      .Index iframe {
+        height: 4.8rem; }
       .Index footer .socialMediaIcons-icon {
         width: 35.4375px;
         height: auto; } }
@@ -107,16 +118,12 @@ a {
       /*letter-spacing: 0.30rem;*/
       letter-spacing: 0.35rem; }
     .Index-info {
-      font-size: 0.85rem; }
+      font-size: 1.25rem; }
     .Index-voiceDemo {
       width: 100%; }
     .Index footer .socialMediaIcons-icon {
       width: 63px;
       height: auto; } }
-  .Index-info {
-    margin: 0px 15px; }
-    .Index-info p {
-      width: 100%; }
   @media only screen and (min-width: 810px) {
     .Index-siteImage {
       top: -1.5px;
@@ -135,10 +142,6 @@ a {
     .Index footer .socialMediaIcons-icon {
       width: 84px;
       height: auto; } }
-  .Index-info {
-    margin: 0px 15px; }
-    .Index-info p {
-      width: 100%; }
   .Index-voiceDemo .DemoWidget {
     margin: 5px 0; }
   .Index .Contact a {

@@ -122,8 +122,8 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     /*font-weight: 300;*/
     padding: 0.5rem 0;
     margin-bottom: 1rem;
-    border-top: 0.1rem solid #33adff;
-    border-bottom: 0.1rem solid #33adff; }
+    /*border-top: 0.1rem solid $mainColor;*/
+    /*border-bottom: 0.1rem solid $mainColor;*/ }
   .Index-headerBox {
     font-weight: bolder;
     text-align: center;

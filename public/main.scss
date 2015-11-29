@@ -16,19 +16,32 @@ $imageMedium: $imageLarge * $breakpointMultiplier;
 $imageSmall: $imageMedium * $breakpointMultiplier;
 $imageHandheld: $imageSmall * $breakpointMultiplier;
 
+$mainColor: #33adff;
+
 html {
   font-size: $fontSize;
   -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+  -webkit-font-smoothing: antialiased;
+  color: #111111;
 }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #ff0066;
+  color: $mainColor;
 }
 
 span {
-  color: #ff0066;
+  font-weight: bolder;
+  color: $mainColor;
+}
+
+h1 {
+  color: #444444;
+}
+
+h2 {
+  color: #444444;
 }
 
 .Index {
@@ -37,8 +50,8 @@ span {
   &-info {
     padding: 0.5rem 0;
     margin-bottom: 1rem;
-    border-top: 0.1rem solid #ff0066;
-    border-bottom: 0.1rem solid #ff0066;
+    border-top: 0.1rem solid $mainColor;
+    border-bottom: 0.1rem solid $mainColor;
   }
   p {
     font-weight: lighter;
@@ -260,9 +273,7 @@ span {
     }
   }
 
-  .Contact {
-    a {
-      text-decoration: none;
-    }
+  &-contact {
+    text-align: center;
   }
 }

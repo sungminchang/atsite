@@ -1,22 +1,31 @@
 html {
   font-size: 20;
-  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); }
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-font-smoothing: antialiased;
+  color: #111111; }
 
 a {
   text-decoration: none;
   cursor: pointer;
-  color: #ff0066; }
+  color: #33adff; }
 
 span {
-  color: #ff0066; }
+  font-weight: bolder;
+  color: #33adff; }
+
+h1 {
+  color: #444444; }
+
+h2 {
+  color: #444444; }
 
 .Index {
   font-family: helvetica, sans-serif; }
   .Index-info {
     padding: 0.5rem 0;
     margin-bottom: 1rem;
-    border-top: 0.1rem solid #ff0066;
-    border-bottom: 0.1rem solid #ff0066; }
+    border-top: 0.1rem solid #33adff;
+    border-bottom: 0.1rem solid #33adff; }
   .Index p {
     font-weight: lighter; }
   .Index-headerBox {
@@ -144,7 +153,7 @@ span {
       height: auto; } }
   .Index-voiceDemo .DemoWidget {
     margin: 5px 0; }
-  .Index .Contact a {
-    text-decoration: none; }
+  .Index-contact {
+    text-align: center; }
 
 /*# sourceMappingURL=main.css.map */

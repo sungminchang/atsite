@@ -1,6 +1,7 @@
 $fontSize: 18;
 $spacingMultiplier: 0.175;
 $breakpointMultiplier: 0.75;
+$imageBreakpointMultiplier: 0.85;
 
 $large: 2rem;
 $largeSpacing: $large * $spacingMultiplier;
@@ -12,9 +13,11 @@ $handheld: $small * $breakpointMultiplier;
 $handheldSpacing: $small * $spacingMultiplier;
 
 $imageLarge: 84px;
-$imageMedium: $imageLarge * $breakpointMultiplier;
-$imageSmall: $imageMedium * $breakpointMultiplier;
-$imageHandheld: $imageSmall * $breakpointMultiplier;
+$imageMedium: $imageLarge * $imageBreakpointMultiplier;
+$imageSmall: $imageMedium * $imageBreakpointMultiplier;
+$imageHandheld: $imageSmall * $imageBreakpointMultiplier;
+
+$transitionSpeed: 0.1s;
 
 $mainColor: #33adff;
 $headerColor: #222222;
@@ -142,13 +145,13 @@ footer {
         &:hover {
           background: #222222;
         }
-        transition: 0.2s background-color ease-in-out;
+        transition: $transitionSpeed*1.75 background-color ease-in-out;
         
         img {
           &:hover {
             opacity: 0.5;
           }
-          transition: 0.2s opacity ease-in-out;
+          transition: $transitionSpeed*1.75 opacity ease-in-out;
         }
       }
     }
@@ -396,6 +399,12 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
   }
 
   &-contact {
+    a {
+      &:hover {
+        font-weight: 600;
+      }
+      transition: $transitionSpeed font-weight ease-in-out;
+    }
     text-align: center;
   }
 }

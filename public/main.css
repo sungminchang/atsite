@@ -99,11 +99,11 @@ footer .socialMediaIcons-icon--overlay {
   border-radius: 5px;
   display: inline-block;
   vertical-align: top;
-  transition: 0.2s background-color ease-in-out; }
+  transition: 0.175s background-color ease-in-out; }
   footer .socialMediaIcons-icon--overlay:hover {
     background: #222222; }
   footer .socialMediaIcons-icon--overlay img {
-    transition: 0.2s opacity ease-in-out; }
+    transition: 0.175s opacity ease-in-out; }
     footer .socialMediaIcons-icon--overlay img:hover {
       opacity: 0.5; }
 
@@ -185,7 +185,7 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
       .Index iframe {
         height: 4.8rem; }
       .Index footer .socialMediaIcons-icon {
-        width: 35.4375px;
+        width: 51.5865px;
         height: auto; } }
   @media only screen and (min-width: 416px) and (max-width: 555px) {
     .Index-siteImage {
@@ -201,7 +201,7 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     .Index-info p {
       font-size: 0.85rem; }
     .Index footer .socialMediaIcons-icon {
-      width: 47.25px;
+      width: 60.69px;
       height: auto; } }
   @media only screen and (min-width: 556px) and (max-width: 809px) {
     .Index-siteImage {
@@ -226,7 +226,7 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     .Index-voiceDemo {
       width: 100%; }
     .Index footer .socialMediaIcons-icon {
-      width: 63px;
+      width: 71.4px;
       height: auto; } }
   @media only screen and (min-width: 810px) {
     .Index-siteImage {
@@ -253,5 +253,9 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     margin: 5px 0; }
   .Index-contact {
     text-align: center; }
+    .Index-contact a {
+      transition: 0.1s font-weight ease-in-out; }
+      .Index-contact a:hover {
+        font-weight: 600; }
 
 /*# sourceMappingURL=main.css.map */

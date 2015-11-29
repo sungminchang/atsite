@@ -33,11 +33,11 @@ $headerColor: #222222;
   font-family: ComicNeue-Angular-bold;
   src: url(../fonts/ComicNeue-Angular_Bold.otf);
 }*/
-
+/*
 @font-face {
   font-family: LeagueGothic;
   src: url(../fonts/LeagueGothic-Regular.otf);
-}
+}*/
 
 /*@font-face {
   font-family: LeagueGothic-light;
@@ -141,14 +141,14 @@ footer {
         vertical-align: top;
         &:hover {
           background: #222222;
-          transition: 0.2s;
         }
+        transition: 0.2s background-color ease-in-out;
         
         img {
           &:hover {
             opacity: 0.5;
-            transition: 0.2s;
           }
+          transition: 0.2s opacity ease-in-out;
         }
       }
     }

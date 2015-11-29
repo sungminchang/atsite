@@ -13,9 +13,11 @@
   font-family: ComicNeue-Angular-bold;
   src: url(../fonts/ComicNeue-Angular_Bold.otf);
 }*/
+/*
 @font-face {
   font-family: LeagueGothic;
-  src: url(../fonts/LeagueGothic-Regular.otf); }
+  src: url(../fonts/LeagueGothic-Regular.otf);
+}*/
 /*@font-face {
   font-family: LeagueGothic-light;
   src: url(../fonts/LeagueGothic_Light.otf);
@@ -96,13 +98,14 @@ footer .socialMediaIcons-icon--overlay {
   margin: 5px;
   border-radius: 5px;
   display: inline-block;
-  vertical-align: top; }
+  vertical-align: top;
+  transition: 0.2s background-color ease-in-out; }
   footer .socialMediaIcons-icon--overlay:hover {
-    background: #222222;
-    transition: 0.2s; }
-  footer .socialMediaIcons-icon--overlay img:hover {
-    opacity: 0.5;
-    transition: 0.2s; }
+    background: #222222; }
+  footer .socialMediaIcons-icon--overlay img {
+    transition: 0.2s opacity ease-in-out; }
+    footer .socialMediaIcons-icon--overlay img:hover {
+      opacity: 0.5; }
 
 /*<link href<link href='http
 s://fonts.googleapis.com/css?

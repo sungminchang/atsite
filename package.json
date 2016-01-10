@@ -15,7 +15,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
-    "dev": "webpack-dev-server --progress --colors --hot --inline"
+    "dev": "webpack-dev-server --progress --colors --hot --inline",
+    "sass": "sass --watch public/main.scss:public/main.css"
   },
   "author": "SungMin Chang",
   "license": "ISC"

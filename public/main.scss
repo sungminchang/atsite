@@ -181,7 +181,8 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
 .Index {
   font-family: 'proxima-nova', serif;
   font-weight: 300;
-
+  max-width: 60rem;
+  margin: 0 auto;
   &-info {
     /*font-family: 'Lato', sans-serif;*/
     /*font-weight: 300;*/
@@ -225,6 +226,24 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
 
   &-subheader {
     line-height: 1;
+    text-align: center;
+  }
+
+
+  &-voiceDemo {
+   
+    .DemoWidget {
+      margin: 5px 0;
+    }
+  }
+
+  &-contact {
+    a {
+      &:hover {
+        font-weight: 600;
+      }
+      transition: $transitionSpeed font-weight ease-in-out;
+    }
     text-align: center;
   }
 
@@ -414,20 +433,5 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     }
   }
 
-  &-voiceDemo {
-   
-    .DemoWidget {
-      margin: 5px 0;
-    }
-  }
-
-  &-contact {
-    a {
-      &:hover {
-        font-weight: 600;
-      }
-      transition: $transitionSpeed font-weight ease-in-out;
-    }
-    text-align: center;
-  }
+ 
 }

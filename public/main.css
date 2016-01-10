@@ -116,7 +116,9 @@ Droid+Sans|Roboto+Slab:400,300|Shadows+Into+Light
 Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts.googleapis.com/css?family=Open+Sans:400,300italic|Source+Sans+Pro:400,300|Droid+Sans|Roboto+Slab:400,300|Shadows+Into+Light|Amatic+SC|Chewy|Gloria+Hallelujah' rel='stylesheet' type='text/css'>*/
 .Index {
   font-family: 'proxima-nova', serif;
-  font-weight: 300; }
+  font-weight: 300;
+  max-width: 60rem;
+  margin: 0 auto; }
   .Index-info {
     /*font-family: 'Lato', sans-serif;*/
     /*font-weight: 300;*/
@@ -149,6 +151,14 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
   .Index-subheader {
     line-height: 1;
     text-align: center; }
+  .Index-voiceDemo .DemoWidget {
+    margin: 5px 0; }
+  .Index-contact {
+    text-align: center; }
+    .Index-contact a {
+      transition: 0.1s font-weight ease-in-out; }
+      .Index-contact a:hover {
+        font-weight: 600; }
   .Index footer {
     margin: 22.5px 0;
     text-align: center; }
@@ -250,13 +260,5 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
       .Index footer .socialMediaIcons-icon--overlay {
         height: 84px;
         width: 84px; } }
-  .Index-voiceDemo .DemoWidget {
-    margin: 5px 0; }
-  .Index-contact {
-    text-align: center; }
-    .Index-contact a {
-      transition: 0.1s font-weight ease-in-out; }
-      .Index-contact a:hover {
-        font-weight: 600; }
 
 /*# sourceMappingURL=main.css.map */

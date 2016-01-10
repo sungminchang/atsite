@@ -159,6 +159,8 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
       transition: 0.1s font-weight ease-in-out; }
       .Index-contact a:hover {
         font-weight: 600; }
+    .Index-contact p {
+      margin: 0 auto; }
   .Index footer {
     margin: 22.5px 0;
     text-align: center; }

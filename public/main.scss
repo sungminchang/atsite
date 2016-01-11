@@ -3,7 +3,7 @@ $spacingMultiplier: 0.175;
 $breakpointMultiplier: 0.80;
 $imageBreakpointMultiplier: 0.85;
 $fontBreakpointMultiplier: 0.90;
-$iframeBreakpointMultiplier: 0.75;
+$iframeBreakpointMultiplier: 0.85;
 
 $large: 2rem;
 $largeSpacing: $large * $spacingMultiplier;
@@ -33,38 +33,6 @@ $transitionSpeed: 0.1s;
 
 $mainColor: #33adff;
 $headerColor: #222222;
-/*
-@font-face {
-  font-family: ComicNeue-Angular;
-  src: url(../fonts/ComicNeue-Angular_Regular.otf);
-}
-
-@font-face {
-  font-family: ComicNeue-Angular-light;
-  src: url(../fonts/ComicNeue-Angular_Light.otf);
-}
-
-@font-face {
-  font-family: ComicNeue-Angular-bold;
-  src: url(../fonts/ComicNeue-Angular_Bold.otf);
-}*/
-/*
-@font-face {
-  font-family: LeagueGothic;
-  src: url(../fonts/LeagueGothic-Regular.otf);
-}*/
-
-/*@font-face {
-  font-family: LeagueGothic-light;
-  src: url(../fonts/LeagueGothic_Light.otf);
-}
-
-@font-face {
-  font-family: LeagueGothic-bold;
-  src: url(../fonts/LeagueGothic_Bold.otf);
-}
-*/
-
 
 @font-face {
 font-family:"proxima-nova";
@@ -145,39 +113,6 @@ h1 {
 h2 {
   color: $headerColor;
 }
-
-footer {
-  .socialMediaIcons {
-    &-icon {
-      &--overlay { 
-        margin: 5px;
-        border-radius: 5px;
-        display: inline-block;
-        vertical-align: top;
-        &:hover {
-          background: #222222;
-        }
-        transition: $transitionSpeed*1.75 background-color ease-in-out;
-        
-        img {
-          &:hover {
-            opacity: 0.5;
-          }
-          transition: $transitionSpeed*1.75 opacity ease-in-out;
-        }
-      }
-    }
-  }
-}
-
-/*<link href<link href='http
-s://fonts.googleapis.com/css?
-family=Open+Sans:400,300italic|
-Source+Sans+Pro:400,300|
-Droid+Sans|Roboto+Slab:400,300|Shadows+Into+Light
-|Amatic+SC|Chewy|Gloria+Hallelujah|
-Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts.googleapis.com/css?family=Open+Sans:400,300italic|Source+Sans+Pro:400,300|Droid+Sans|Roboto+Slab:400,300|Shadows+Into+Light|Amatic+SC|Chewy|Gloria+Hallelujah' rel='stylesheet' type='text/css'>*/
-
 .Index {
   font-family: 'proxima-nova', serif;
   font-weight: 300;
@@ -186,12 +121,8 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
   &-info {
     margin: 0 auto;
     width: 60%;
-    /*font-family: 'Lato', sans-serif;*/
-    /*font-weight: 300;*/
     padding: 0.5rem 0;
     margin-bottom: 1rem;
-    /*border-top: 0.1rem solid $mainColor;*/
-    /*border-bottom: 0.1rem solid $mainColor;*/
   }
   
   &-headerBox {
@@ -231,9 +162,13 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     text-align: center;
   }
 
+  nav {
+    margin-top: 15px;
+    text-align: center;
+  }
 
   &-voiceDemo {
-    width: 60%;
+    /*width: 100%;*/
     margin: 0 auto;
 
     .DemoWidget {
@@ -261,6 +196,27 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
     .socialMediaIcons {
       &-icon {
         border-radius: 5px;
+      }
+    }
+    .socialMediaIcons {
+      &-icon {
+        &--overlay { 
+          margin: 5px;
+          border-radius: 5px;
+          display: inline-block;
+          vertical-align: top;
+          &:hover {
+            background: #222222;
+          }
+          transition: $transitionSpeed*1.75 background-color ease-in-out;
+          
+          img {
+            &:hover {
+              opacity: 0.5;
+            }
+            transition: $transitionSpeed*1.75 opacity ease-in-out;
+          }
+        }
       }
     }
   }

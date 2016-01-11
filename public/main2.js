@@ -1,9 +1,22 @@
 var smoothScrollTo = require('./smoothScroll.js');
 
+smoothScrollAdder('nav .contact', '.Index-contact');
+smoothScrollAdder('nav .about-me', '.Index-info');
+smoothScrollAdder('nav .demos', '.Index-voiceDemo');
 
-var contactLink = document.querySelector('nav .contact');
-var contactEl = document.querySelector('.Index-contact');
-contactLink.addEventListener('click', function() {smoothScrollTo(document.body, contactEl.getBoundingClientRect().top, 500)});
+function smoothScrollAdder(linkSelector, targetSelector, timing) {
+  timing = timing ? timing : 500;
+  var links = document.querySelectorAll(linkSelector);
+  var target = document.querySelector(targetSelector);
+  
+  for (var i = 0; i < links.length; i++) {
+    link = links[i];
+    link.addEventListener('click', function() {
+      smoothScrollTo(document.body, target.getBoundingClientRect().top - document.body.getBoundingClientRect().top, timing); 
+    });
+  }
+  
+}
 
 window.mobilecheck = function() {
   var check = false;
@@ -20,6 +33,7 @@ if (!isMobile) {
 }
 
 /*
+  nodeReplacer
   options: {
     elementType: string, tag type
     attributes: object, element attributes
@@ -37,7 +51,7 @@ function nodeReplacer(childClass, innerHTML, options) {
   var newElement = document.createElement(elementType);
   newElement.innerHTML = innerHTML;
   oldElement.parentNode.replaceChild(newElement, oldElement);
-};
+}
 
 function nodeRemover(classname) {
   var toDelete = document.getElementsByClassName(classname)[0];

@@ -321,9 +321,7 @@ h2 {
 
     &-header {
       display: inline-block;
-      /*font-size: 1.25rem;*/
       font-size: $medium;
-      /*letter-spacing: $mediumSpacing;*/
       letter-spacing: $mediumSpacing;
       h1 {
         margin: 0.5625rem 0;
@@ -331,9 +329,7 @@ h2 {
     }
 
     &-subheader {
-      /*font-size: 1.25rem;*/
       font-size: $medium;
-      /*letter-spacing: 0.30rem;*/
       letter-spacing: $mediumSpacing;
     }
 
@@ -350,10 +346,6 @@ h2 {
       font-size: $fontLarge;
     }
 
-/*    &-voiceDemo {
-      width: 100%;
-    }
-*/
     footer {
       .socialMediaIcons {
         &-icon {

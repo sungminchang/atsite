@@ -180,38 +180,29 @@ h2 {
       width: 60.69px;
       height: auto; } }
   @media only screen and (min-width: 556px) and (max-width: 809px) {
-    .Index {
-      /*    &-voiceDemo {
-            width: 100%;
-          }
-      */ }
-      .Index-siteImage {
-        position: relative;
-        top: -1px;
-        height: 3.75rem; }
-      .Index-header {
-        display: inline-block;
-        /*font-size: 1.25rem;*/
-        font-size: 1.6rem;
-        /*letter-spacing: $mediumSpacing;*/
-        letter-spacing: 0.35rem; }
-        .Index-header h1 {
-          margin: 0.5625rem 0; }
-      .Index-subheader {
-        /*font-size: 1.25rem;*/
-        font-size: 1.6rem;
-        /*letter-spacing: 0.30rem;*/
-        letter-spacing: 0.35rem; }
-      .Index iframe {
-        height: 129.6; }
-      .Index iframes {
-        height: 6.4rem; }
-      .Index-info {
-        width: 75%;
-        font-size: 1.1rem; }
-      .Index footer .socialMediaIcons-icon {
-        width: 71.4px;
-        height: auto; } }
+    .Index-siteImage {
+      position: relative;
+      top: -1px;
+      height: 3.75rem; }
+    .Index-header {
+      display: inline-block;
+      font-size: 1.6rem;
+      letter-spacing: 0.35rem; }
+      .Index-header h1 {
+        margin: 0.5625rem 0; }
+    .Index-subheader {
+      font-size: 1.6rem;
+      letter-spacing: 0.35rem; }
+    .Index iframe {
+      height: 129.6; }
+    .Index iframes {
+      height: 6.4rem; }
+    .Index-info {
+      width: 75%;
+      font-size: 1.1rem; }
+    .Index footer .socialMediaIcons-icon {
+      width: 71.4px;
+      height: auto; } }
   @media only screen and (min-width: 810px) {
     .Index-siteImage {
       top: -1.5px;

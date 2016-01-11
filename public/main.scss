@@ -1,9 +1,12 @@
 $fontSize: 18;
+
+$maxWidth: 60rem;
+
 $spacingMultiplier: 0.175;
 $breakpointMultiplier: 0.80;
 $imageBreakpointMultiplier: 0.85;
 $fontBreakpointMultiplier: 0.90;
-$iframeBreakpointMultiplier: 0.85;
+$iframeBreakpointMultiplier: 0.80;
 
 $large: 2rem;
 $largeSpacing: $large * $spacingMultiplier;
@@ -116,7 +119,7 @@ h2 {
 .Index {
   font-family: 'proxima-nova', serif;
   font-weight: 300;
-  max-width: 60rem;
+  max-width: $maxWidth;
   margin: 0 auto;
   &-info {
     margin: 0 auto;
@@ -168,7 +171,7 @@ h2 {
   }
 
   &-voiceDemo {
-    /*width: 100%;*/
+    max-width: 0.60 * $maxWidth;
     margin: 0 auto;
 
     .DemoWidget {
@@ -255,6 +258,7 @@ h2 {
     }
 
     &-info {
+      width: 90%;
       p {
         font-size: $fontSmall;
       }
@@ -292,6 +296,7 @@ h2 {
     }
 
     &-info {
+      width: 75%;
       p {
         font-size: $fontMedium;
       }
@@ -341,6 +346,7 @@ h2 {
     }
 
     &-info {
+      width: 75%;
       font-size: $fontLarge;
     }
 

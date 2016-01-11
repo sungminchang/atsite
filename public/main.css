@@ -103,7 +103,7 @@ h2 {
     margin-top: 15px;
     text-align: center; }
   .Index-voiceDemo {
-    /*width: 100%;*/
+    max-width: 36rem;
     margin: 0 auto; }
     .Index-voiceDemo .DemoWidget {
       margin: 5px 0; }
@@ -151,9 +151,11 @@ h2 {
       font-size: 1.024rem;
       letter-spacing: 0.224rem; }
     .Index iframe {
-      height: 99.48825; }
-    .Index-info p {
-      font-size: 0.891rem; }
+      height: 82.944; }
+    .Index-info {
+      width: 90%; }
+      .Index-info p {
+        font-size: 0.891rem; }
     .Index footer .socialMediaIcons-icon {
       width: 51.5865px;
       height: auto; } }
@@ -169,9 +171,11 @@ h2 {
       font-size: 1.28rem;
       letter-spacing: 0.28rem; }
     .Index iframe {
-      height: 117.045; }
-    .Index-info p {
-      font-size: 0.99rem; }
+      height: 103.68; }
+    .Index-info {
+      width: 75%; }
+      .Index-info p {
+        font-size: 0.99rem; }
     .Index footer .socialMediaIcons-icon {
       width: 60.69px;
       height: auto; } }
@@ -199,10 +203,11 @@ h2 {
         /*letter-spacing: 0.30rem;*/
         letter-spacing: 0.35rem; }
       .Index iframe {
-        height: 137.7; }
+        height: 129.6; }
       .Index iframes {
         height: 6.4rem; }
       .Index-info {
+        width: 75%;
         font-size: 1.1rem; }
       .Index footer .socialMediaIcons-icon {
         width: 71.4px;

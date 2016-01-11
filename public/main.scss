@@ -184,6 +184,8 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
   max-width: 60rem;
   margin: 0 auto;
   &-info {
+    margin: 0 auto;
+    width: 60%;
     /*font-family: 'Lato', sans-serif;*/
     /*font-weight: 300;*/
     padding: 0.5rem 0;
@@ -231,7 +233,9 @@ Lato:400,300|Oswald:400,300|Lora' rel='stylesheet' type='text/css'>https://fonts
 
 
   &-voiceDemo {
-   
+    width: 60%;
+    margin: 0 auto;
+
     .DemoWidget {
       margin: 5px 0;
     }

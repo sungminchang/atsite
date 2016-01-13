@@ -79,7 +79,8 @@ h2 {
   font-family: 'proxima-nova', serif;
   font-weight: 300;
   max-width: 60rem;
-  margin: 0 auto; }
+  margin: 0 auto;
+  padding-bottom: 2rem; }
   .Index-info {
     text-align: center;
     margin: 0 auto;

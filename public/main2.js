@@ -1,7 +1,7 @@
 var smoothScrollTo = require('./smoothScroll.js');
 
 smoothScrollAdder('nav .contact', '.Index-contact');
-smoothScrollAdder('nav .about-me', '.Index-info');
+// smoothScrollAdder('nav .about-me', '.Index-info');
 smoothScrollAdder('nav .demos', '.Index-voiceDemo');
 
 function smoothScrollAdder(linkSelector, targetSelector, timing) {

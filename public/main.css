@@ -61,8 +61,7 @@ a {
   text-decoration: none;
   cursor: pointer;
   color: #7fd0bb;
-  font-weight: bolder;
-  font-size: 1.25rem; }
+  font-weight: bolder; }
 
 span {
   font-weight: bolder;
@@ -82,6 +81,7 @@ h2 {
   max-width: 60rem;
   margin: 0 auto; }
   .Index-info {
+    text-align: center;
     margin: 0 auto;
     width: 60%;
     padding: 0.5rem 0;
@@ -100,6 +100,7 @@ h2 {
       .Index-headerBox .TitleBox h2 {
         margin: 0; }
   .Index-siteImage {
+    background-repeat: no-repeat;
     position: relative;
     display: inline-block;
     width: auto;
@@ -146,10 +147,17 @@ h2 {
           opacity: 0.5; }
   @media only screen and (max-width: 415px) {
     .Index {
-      max-width: 21.504rem; }
+      max-width: 17rem; }
+      .Index a {
+        font-size: 0.891rem; }
       .Index-siteImage {
-        display: none;
-        height: 2.25rem; }
+        margin-right: 5px;
+        background-image: url("../assets/taejinlogocropped_handheld.png");
+        width: 53px;
+        height: 42px;
+        bottom: 3px; }
+      .Index-headerBox {
+        padding-top: 1rem; }
       .Index-header {
         display: inline;
         font-size: 1.28rem;
@@ -167,7 +175,7 @@ h2 {
       .Index iframe {
         height: 82.944; }
       .Index-info {
-        width: 90%; }
+        width: 100%; }
         .Index-info p {
           font-size: 0.891rem; }
       .Index footer .socialMediaIcons-icon {
@@ -175,7 +183,9 @@ h2 {
         height: auto; } }
   @media only screen and (min-width: 416px) and (max-width: 555px) {
     .Index {
-      max-width: 26.88rem; }
+      max-width: 23rem; }
+      .Index a {
+        font-size: 0.99rem; }
       .Index-siteImage {
         background-image: url("../assets/taejinlogocropped_small.png");
         background-repeat: no-repeat;
@@ -192,7 +202,7 @@ h2 {
       .Index iframe {
         height: 103.68; }
       .Index-info {
-        width: 75%; }
+        width: 85%; }
         .Index-info p {
           font-size: 0.99rem; }
       .Index footer .socialMediaIcons-icon {
@@ -200,7 +210,9 @@ h2 {
         height: auto; } }
   @media only screen and (min-width: 556px) and (max-width: 809px) {
     .Index {
-      max-width: 33.6rem; }
+      max-width: 28rem; }
+      .Index a {
+        font-size: 1.1rem; }
       .Index-siteImage {
         background-image: url("../assets/taejinlogocropped_medium.png");
         background-repeat: no-repeat;
@@ -221,7 +233,7 @@ h2 {
       .Index iframes {
         height: 6.4rem; }
       .Index-info {
-        width: 75%;
+        width: 85%;
         font-size: 1.1rem; }
       .Index footer .socialMediaIcons-icon {
         width: 71.4px;
@@ -229,6 +241,8 @@ h2 {
   @media only screen and (min-width: 810px) {
     .Index {
       max-width: 42rem; }
+      .Index a {
+        font-size: 1.1rem; }
       .Index-siteImage {
         background-image: url("../assets/taejinlogocropped_large.png");
         background-repeat: no-repeat;
@@ -245,6 +259,7 @@ h2 {
       .Index iframe {
         height: 162; }
       .Index-info {
+        width: 85%;
         font-size: 1.1rem; }
       .Index footer .socialMediaIcons-icon {
         width: 84px;

@@ -18,9 +18,9 @@ $handheld: $small * $breakpointMultiplier;
 $handheldSpacing: $small * $spacingMultiplier;
 
 $indexWidthLarge: 42rem;
-$indexWidthMedium: $indexWidthLarge * $breakpointMultiplier;
-$indexWidthSmall: $indexWidthMedium * $breakpointMultiplier;
-$indexWidthHandheld: $indexWidthSmall * $breakpointMultiplier;
+$indexWidthMedium: 28rem;
+$indexWidthSmall: 23rem;
+$indexWidthHandheld: 17rem;
 
 
 $fontLarge: 1.1rem;
@@ -120,7 +120,6 @@ a {
   cursor: pointer;
   color: #7fd0bb;
   font-weight: bolder;
-  font-size: 1.25rem;
 }
 
 span {
@@ -143,6 +142,7 @@ h2 {
   max-width: $maxWidth;
   margin: 0 auto;
   &-info {
+    text-align: center;
     margin: 0 auto;
     width: 60%;
     padding: 0.5rem 0;
@@ -169,6 +169,7 @@ h2 {
   }
 
   &-siteImage {
+    background-repeat: no-repeat;  
     position: relative;
     display: inline-block;
     width: auto;
@@ -248,10 +249,20 @@ h2 {
 
   @media only screen and (max-width : 415px) {
     max-width: $indexWidthHandheld;
+    a {
+      font-size: $fontSmall;
+    }
 
     &-siteImage {
-      display: none;
-      height: 2.25rem;
+      margin-right: 5px;
+      background-image: url('../assets/taejinlogocropped_handheld.png');
+      width: 53px;
+      height: 42px;
+      bottom: 3px;
+    }
+
+    &-headerBox {
+      padding-top: 1rem;
     }
 
     &-header {
@@ -281,7 +292,7 @@ h2 {
     }
 
     &-info {
-      width: 90%;
+      width: 100%;
       p {
         font-size: $fontSmall;
       }
@@ -299,6 +310,9 @@ h2 {
 
   @media only screen and (min-width: 416px) and (max-width : 555px) {
     max-width: $indexWidthSmall;
+    a {
+      font-size: $fontMedium;
+    }
 
     &-siteImage {
       background-image: url('../assets/taejinlogocropped_small.png');
@@ -325,7 +339,7 @@ h2 {
     }
 
     &-info {
-      width: 75%;
+      width: 85%;
       p {
         font-size: $fontMedium;
       }
@@ -343,6 +357,9 @@ h2 {
 
   @media only screen and (min-width : 556px) and (max-width: 809px) {
     max-width: $indexWidthMedium;
+    a {
+      font-size: $fontLarge;
+    }
 
     &-siteImage {
       background-image: url('../assets/taejinlogocropped_medium.png');
@@ -375,7 +392,7 @@ h2 {
     }
 
     &-info {
-      width: 75%;
+      width: 85%;
       font-size: $fontLarge;
     }
 
@@ -391,6 +408,9 @@ h2 {
 
   @media only screen and (min-width : 810px) {
     max-width: $indexWidthLarge;
+    a {
+      font-size: $fontLarge;
+    }
 
     &-siteImage {
       background-image: url('../assets/taejinlogocropped_large.png');
@@ -416,6 +436,7 @@ h2 {
     }
 
     &-info {
+      width: 85%;
       font-size: $fontLarge;
     }
 

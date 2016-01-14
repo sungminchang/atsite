@@ -25,11 +25,25 @@ module.exports = function(grunt) {
           // LICENCE inside that folder will have ContentType equal to 'text/plain'
         ]
       }
+    },
+
+    cssmin: {
+      target: {
+        files: [{
+          expand: true,
+          cwd: 'public',
+          src: ['main.css'],
+          dest: 'public',
+          ext: '.min.css'
+        }]
+      }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-aws-s3');
+  grunt.loadNpmTasks('grunt-contrib-cssmin');
 
-  grunt.registerTask('pushS3', ['aws_s3']);
+  grunt.registerTask('pushS3', ['cssmin', 'aws_s3']);
 
 };

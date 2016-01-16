@@ -45,5 +45,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
 
   grunt.registerTask('pushS3', ['cssmin', 'aws_s3']);
+  grunt.registerTask('minify', ['cssmin']);
 
 };
+

@@ -1,5 +1,7 @@
 var smoothScrollTo = require('./smoothScroll.js');
 
+var timeOut = [];
+
 smoothScrollAdder('nav .contact', '.Index-contact');
 
 function smoothScrollAdder(linkSelector, targetSelector, timing) {
@@ -10,9 +12,34 @@ function smoothScrollAdder(linkSelector, targetSelector, timing) {
     link = links[i];
     link.addEventListener('click', function() {
       smoothScrollTo(document.body, target.getBoundingClientRect().top - document.body.getBoundingClientRect().top, timing); 
+      addStyle(link, target, 'unhighlighted', 'highlight', timing * 4);
     });
   }
-  
+}
+
+function addStyle(link, target, style, altStyle, timing) { // <a>, .Index-contact node, 500
+  if (timeOut.length > 0) {
+    return;
+  }
+
+  if (target.className.indexOf(style) !== -1) {
+    target.className = target.className.replace(' ' + style, ' ' + altStyle);
+    var id = setTimeout(function() {
+      target.className = target.className.replace(' ' + altStyle, ' ' + style);
+      timeOut.pop();
+    }, timing);
+
+    timeOut.push(id);
+
+
+  } else {
+    target.className = target.className.replace(' ' + altStyle, ' ' + style);
+    var id = setTimeout(function() {
+      target.className = target.className.replace(' ' + style, ' ' + altStyle);
+    }, timing);
+
+    timeOut.push(id);
+  }
 }
 
 window.mobilecheck = function() {

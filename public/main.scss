@@ -37,7 +37,7 @@ $iframeHandheld: $iframeSmall * $iframeBreakpointMultiplier;
 $transitionSpeed: 0.1s;
 
 $mainColor: #59493d;
-$secondaryColor: #59493d;
+$secondaryColor: #7fd0bb;
 $headerColor: #222222;
 
 @font-face {
@@ -77,10 +77,7 @@ a {
   font-weight: bolder;
 }
 
-span {
-  font-weight: bolder;
-  color: $mainColor;
-}
+
 
 h1 {
   color: $headerColor;
@@ -101,6 +98,12 @@ h2 {
   overflow: visible;
   margin: 0 auto;
   padding-bottom: 2rem;
+
+  .secondaryText {
+    font-weight: bolder;
+    color: $mainColor;
+  }
+
   &-info {
     font-weight: lighter;
     margin: 0 auto;
@@ -162,6 +165,21 @@ h2 {
   }
 
   &-contact {
+
+    &.unhighlighted {
+      span {
+        background: none;
+        transition: $transitionSpeed * 2 background ease-in-out 
+      }
+    }
+
+    &.highlight {
+      span {
+        background: $secondaryColor;
+        transition: $transitionSpeed * 2 background ease-in-out;
+      }
+    }
+
     a {
       &:hover {
         font-weight: 600;

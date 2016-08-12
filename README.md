@@ -1,0 +1,1 @@
+Run `npm run build` to build the bundle.js file, and `grunt pushS3` to push to the bucket. `index.html`, `bundle.js`, and `public/main.css` are the three files that will be pushed.

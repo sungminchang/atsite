@@ -19,7 +19,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server.js",
     "dev": "webpack-dev-server --progress --colors --hot --inline",
-    "build": "webpack ./entry.js",
+    "build": "webpack -p ./entry.js",
     "sass": "sass --watch public/main.scss:public/main.css",
     "ngrok": "~/Downloads/ngrok 8080"
   },

@@ -16,8 +16,7 @@ html, body {
 html {
   font-size: 18;
   -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
-  -webkit-font-smoothing: antialiased;
-  color: #111111; }
+  -webkit-font-smoothing: antialiased; }
 
 body {
   background-color: #7fd0bb; }
@@ -50,6 +49,8 @@ h2 {
     font-weight: bolder;
     color: #59493d; }
   .Index-info {
+    max-width: 36rem;
+    color: #59493d;
     font-weight: lighter;
     margin: 0 auto;
     width: 60%;
@@ -90,11 +91,13 @@ h2 {
     .Index-voiceDemo .DemoWidget {
       margin: 5px 0; }
   .Index-contact {
+    color: #59493d;
     text-align: center; }
     .Index-contact.unhighlighted span {
       background: none;
       transition: 0.2s background ease-in-out; }
     .Index-contact.highlight span {
+      color: #59493d;
       background: #7fd0bb;
       transition: 0.2s background ease-in-out; }
     .Index-contact a {

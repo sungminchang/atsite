@@ -51,8 +51,8 @@ window.mobilecheck = function() {
 var isMobile = window.mobilecheck();
 
 if (!isMobile) {
-  nodeReplacer('Index-contactNumber', '310-555-5555', {elementType:'p'});
-  nodeReplacer('Index-contactEmail', 'andrewtha@hahavoiceovers.com', {elementType:'p'});
+  // nodeReplacer('Index-contactNumber', '<span>310-555-5555</span>');
+  nodeReplacer('Index-contactEmail', '<span>hahavoiceovers@gmail.com</span>');
   nodeRemover('Index-contactBreak');
 }
 
@@ -63,6 +63,9 @@ if (!isMobile) {
     attributes: object, element attributes
   }
 */
+function nodeAppender(parent, innerHtml, options) {
+
+}
 
 function nodeReplacer(childClass, innerHTML, options) { 
   elementType = 'div';
@@ -72,7 +75,7 @@ function nodeReplacer(childClass, innerHTML, options) {
   // implement loop to go through attributes and apply them
   // var parent = document.getElementsByClassName(parentClass)[0];
   var oldElement = document.getElementsByClassName(childClass)[0];
-  var newElement = document.createElement(elementType);
+  var newElement = document.createElement('div');
   newElement.innerHTML = innerHTML;
   oldElement.parentNode.replaceChild(newElement, oldElement);
 }
